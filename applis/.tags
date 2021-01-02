@@ -1,0 +1,54 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	td1.py	/^A = np.array([$/;"	v
+B	td1.py	/^B = np.array([$/;"	v
+C	td1.py	/^C = np.array([1, 0, 0])$/;"	v
+D	td1.py	/^D = 0$/;"	v
+K	td1.py	/^K = 0.0001 # SI$/;"	v
+L	td1.py	/^L = 0.01 # H$/;"	v
+Line	CCTR_Display.py	/^class Line:$/;"	c
+M	td1.py	/^M = 0.05 # kg$/;"	v
+MM	td1.py	/^MM = np.concatenate((tmp, Z), axis=0)$/;"	v
+MMd	td1.py	/^MMd = expm(MM * Te)$/;"	v
+Oscillo	CCTR_Display.py	/^class Oscillo:$/;"	c
+R	td1.py	/^R = 1.0 # Omh$/;"	v
+Te	td1.py	/^Te = 0.005 # seconds$/;"	v
+V0	td1.py	/^V0 = 7.0 # 7$/;"	v
+Z	td1.py	/^Z = np.zeros((1, 4))$/;"	v
+__init__	CCTR_Display.py	/^    def __init__(self, name, xr=(0,128), yr=(0,255), depth=4, period=1):$/;"	m	class:Line
+__init__	CCTR_Display.py	/^    def __init__(self, names, xr=(0,128), yr=(0,255), colors= {}, labels={}, step={}, formats={}, period= 10, figname= None):$/;"	m	class:Oscillo
+computeError	computeError.m	/^function [all_errors] = computeError(Y, all_filts, all_images)$/;"	f
+default	CCTR_Plot.py	/^    default='\/dev\/ttyACM0',$/;"	v
+default	CCTR_Plot.py	/^    default='camera',$/;"	v
+draw	CCTR_Display.py	/^    def draw(self):$/;"	m	class:Line
+draw	CCTR_Display.py	/^    def draw(self):$/;"	m	class:Oscillo
+g	td1.py	/^g = 9.81 # m\/s^2$/;"	v
+h0	td1.py	/^h0 = K * i0 * i0 \/ (M * g) # m$/;"	v
+help	CCTR_Plot.py	/^    help='select the usb port'$/;"	v
+help	CCTR_Plot.py	/^    help='select what to plot'$/;"	v
+hp0	td1.py	/^hp0 = 0.0$/;"	v
+i	CCTR_Display_simcam.py	/^i= 0$/;"	v
+i0	td1.py	/^i0 = V0 \/ R # A$/;"	v
+ii	CCTR_Display_simcam.py	/^        ii=i*15+j$/;"	v
+int16s	CCTR_Display.py	/^def int16s(v):$/;"	f
+int32s	CCTR_Display.py	/^def int32s(v):$/;"	f
+int8s	CCTR_Display.py	/^def int8s(v):$/;"	f
+inthex	CCTR_Display.py	/^def inthex(hexstr):$/;"	f
+main	CCTR_Plot.py	/^def main(mode, usb):$/;"	f
+main	CCTR_plot_file.py	/^def main():$/;"	f
+plot	CCTR_Display.py	/^    def plot(self):$/;"	m	class:Line
+plot	CCTR_Display.py	/^    def plot(self):$/;"	m	class:Oscillo
+set	CCTR_Display.py	/^    def set(self, data):$/;"	m	class:Line
+set	CCTR_Display.py	/^    def set(self, name, data):$/;"	m	class:Oscillo
+stack	CCTR_Display.py	/^    def stack(self, oscillo):$/;"	m	class:Oscillo
+tmp	td1.py	/^tmp = np.concatenate((A, B), axis=1)$/;"	v
+twos_complement	CCTR_Display.py	/^def twos_complement(hexstr,bits):$/;"	f
+type	CCTR_Plot.py	/^    type=str,$/;"	v
+update	CCTR_Display.py	/^    def update(self, s):$/;"	m	class:Line
+update	CCTR_Display.py	/^    def update(self, s, FigDraw= True):$/;"	m	class:Oscillo
+x	CCTR_Display_simcam.py	/^x = np.arange(0.0, 128, 1)$/;"	v
+y	CCTR_Display_simcam.py	/^    y= 128+(((i*10)%100))*np.cos(2*np.pi*x\/20)$/;"	v

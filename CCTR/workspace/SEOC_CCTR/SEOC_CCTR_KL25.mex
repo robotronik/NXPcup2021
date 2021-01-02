@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding= "UTF-8" ?>
+<configuration name="MKL25Z128xxx4" version="1.4" xsi:schemaLocation="http://mcuxpresso.nxp.com/XSD/mex_configuration_1.4 http://mcuxpresso.nxp.com/XSD/mex_configuration_1.4.xsd" uuid="4749bcc2-851a-457d-a1f6-64726c1c23bd" xmlns="http://mcuxpresso.nxp.com/XSD/mex_configuration_1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <common>
+      <processor>MKL25Z128xxx4</processor>
+      <package>MKL25Z128VLK4</package>
+      <board>FRDM-KL25Z</board>
+      <mcu_data>ksdk2_0</mcu_data>
+      <cores selected="core0">
+         <core name="Cortex-M0P" id="core0" description="M0P core"/>
+      </cores>
+      <description>Configuration imported from SEOC_CCTR</description>
+   </common>
+   <preferences>
+      <validate_boot_init_only>true</validate_boot_init_only>
+      <generate_extended_information>false</generate_extended_information>
+   </preferences>
+   <tools>
+      <pins name="Pins" version="4.1" enabled="true" update_project_code="true">
+         <pins_profile>
+            <processor_version>4.0.0</processor_version>
+            <pin_labels>
+               <pin_label pin_num="1" pin_signal="PTE0/UART1_TX/RTC_CLKOUT/CMP0_OUT/I2C1_SDA" label="J2[18]/D14" identifier="BLUETOOTH_TX"/>
+               <pin_label pin_num="2" pin_signal="PTE1/SPI1_MOSI/UART1_RX/SPI1_MISO/I2C1_SCL" label="J2[20]/D15" identifier="BLUETOOTH_RX"/>
+               <pin_label pin_num="3" pin_signal="PTE2/SPI1_SCK" label="J9[9]" identifier="ACC_INT_2"/>
+               <pin_label pin_num="4" pin_signal="PTE3/SPI1_MISO/SPI1_MOSI" label="J9[11]" identifier="ACC_INT_1"/>
+               <pin_label pin_num="5" pin_signal="PTE4/SPI1_PCS0" label="J9[13]" identifier="GYR_INT_2"/>
+               <pin_label pin_num="6" pin_signal="PTE5" label="J9[15]" identifier="GYR_INT_1"/>
+               <pin_label pin_num="13" pin_signal="ADC0_DP0/ADC0_SE0/PTE20/TPM1_CH0/UART0_TX" label="J10[1]" identifier="FB_D_1"/>
+               <pin_label pin_num="15" pin_signal="ADC0_DP3/ADC0_SE3/PTE22/TPM2_CH0/UART2_TX" label="J10[5]" identifier="SPEED_1"/>
+               <pin_label pin_num="16" pin_signal="ADC0_DM3/ADC0_SE7a/PTE23/TPM2_CH1/UART2_RX" label="J10[7]" identifier="SPEED_2"/>
+               <pin_label pin_num="21" pin_signal="CMP0_IN5/ADC0_SE4b/PTE29/TPM0_CH2/TPM_CLKIN0" label="J10[9]" identifier="FB_G_2"/>
+               <pin_label pin_num="22" pin_signal="DAC0_OUT/ADC0_SE23/CMP0_IN4/PTE30/TPM0_CH3/TPM_CLKIN1" label="J10[11]" identifier="FB_G_1"/>
+               <pin_label pin_num="30" pin_signal="TSI0_CH5/PTA4/I2C1_SDA/TPM0_CH1/NMI_b" label="J1[10]/D4" identifier="SW_7"/>
+               <pin_label pin_num="31" pin_signal="PTA5/USB_CLKIN/TPM0_CH2" label="J1[12]/D5" identifier="SW_6"/>
+               <pin_label pin_num="32" pin_signal="PTA12/TPM1_CH0" label="J1[8]/D3" identifier="STEERING"/>
+               <pin_label pin_num="33" pin_signal="PTA13/TPM1_CH1" label="J2[2]/D8" identifier="STERRING_2"/>
+               <pin_label pin_num="36" pin_signal="PTA16/SPI0_MOSI/SPI0_MISO" label="J2[9]" identifier="MAG_DRDY"/>
+               <pin_label pin_num="43" pin_signal="ADC0_SE8/TSI0_CH0/PTB0/LLWU_P5/I2C0_SCL/TPM1_CH0" label="J10[2]/A0" identifier="FB_D_2"/>
+               <pin_label pin_num="44" pin_signal="ADC0_SE9/TSI0_CH6/PTB1/I2C0_SDA/TPM1_CH1" label="J10[4]/A1" identifier="POT_3"/>
+               <pin_label pin_num="45" pin_signal="ADC0_SE12/TSI0_CH7/PTB2/I2C0_SCL/TPM2_CH0" label="J10[6]/A2" identifier="POT_2"/>
+               <pin_label pin_num="46" pin_signal="ADC0_SE13/TSI0_CH8/PTB3/I2C0_SDA/TPM2_CH1" label="J10[8]/A3" identifier="POT_1"/>
+               <pin_label pin_num="47" pin_signal="PTB8/EXTRG_IN" label="J9[1]" identifier="CCD_SI_1"/>
+               <pin_label pin_num="48" pin_signal="PTB9" label="J9[3]" identifier="CCD_CLK_1"/>
+               <pin_label pin_num="49" pin_signal="PTB10/SPI1_PCS0" label="J9[5]" identifier="CCD_CLK_0"/>
+               <pin_label pin_num="50" pin_signal="PTB11/SPI1_SCK" label="J9[7]" identifier="CCD_SI_0"/>
+               <pin_label pin_num="55" pin_signal="ADC0_SE14/TSI0_CH13/PTC0/EXTRG_IN/CMP0_OUT" label="J1[3]" identifier="LED_5"/>
+               <pin_label pin_num="56" pin_signal="ADC0_SE15/TSI0_CH14/PTC1/LLWU_P6/RTC_CLKIN/I2C1_SCL/TPM0_CH0" label="J10[12]/U6[31]/A5" identifier="CCD_AD_1"/>
+               <pin_label pin_num="57" pin_signal="ADC0_SE11/TSI0_CH15/PTC2/I2C1_SDA/TPM0_CH1" label="J10[10]/A4" identifier="CCD_AD_0"/>
+               <pin_label pin_num="58" pin_signal="PTC3/LLWU_P7/UART1_RX/TPM0_CH2/CLKOUTa" label="J1[5]" identifier="LED_4"/>
+               <pin_label pin_num="61" pin_signal="PTC4/LLWU_P8/SPI0_PCS0/UART1_TX/TPM0_CH3" label="J1[7]" identifier="LED_3"/>
+               <pin_label pin_num="62" pin_signal="PTC5/LLWU_P9/SPI0_SCK/LPTMR0_ALT2/CMP0_OUT" label="J1[9]" identifier="LED_2"/>
+               <pin_label pin_num="63" pin_signal="CMP0_IN0/PTC6/LLWU_P10/SPI0_MOSI/EXTRG_IN/SPI0_MISO" label="J1[11]" identifier="LED_1"/>
+               <pin_label pin_num="64" pin_signal="CMP0_IN1/PTC7/SPI0_MISO/SPI0_MOSI" label="J1[1]" identifier="LED_6"/>
+               <pin_label pin_num="65" pin_signal="CMP0_IN2/PTC8/I2C0_SCL/TPM0_CH4" label="J1[14]" identifier="AGM_I2C_SCL"/>
+               <pin_label pin_num="66" pin_signal="CMP0_IN3/PTC9/I2C0_SDA/TPM0_CH5" label="J1[16]" identifier="AGM_I2C_SDA"/>
+               <pin_label pin_num="67" pin_signal="PTC10/I2C1_SCL" label="J1[13]" identifier="SW_5"/>
+               <pin_label pin_num="68" pin_signal="PTC11/I2C1_SDA" label="J1[15]" identifier="SW_4"/>
+               <pin_label pin_num="69" pin_signal="PTC12/TPM_CLKIN0" label="J2[1]" identifier="SW_1"/>
+               <pin_label pin_num="70" pin_signal="PTC13/TPM_CLKIN1" label="J2[3]" identifier="SW_2"/>
+               <pin_label pin_num="71" pin_signal="PTC16" label="J2[5]" identifier="SW_3"/>
+               <pin_label pin_num="72" pin_signal="PTC17" label="J2[7]" identifier="MAG_INT"/>
+               <pin_label pin_num="73" pin_signal="PTD0/SPI0_PCS0/TPM0_CH0" label="J2[6]/D10" identifier="MOTOR_PWM_G_2"/>
+               <pin_label pin_num="75" pin_signal="PTD2/SPI0_MOSI/UART2_RX/TPM0_CH2/SPI0_MISO" label="J2[8]/D11" identifier="MOTOR_PWM_D_1"/>
+               <pin_label pin_num="76" pin_signal="PTD3/SPI0_MISO/UART2_TX/TPM0_CH3/SPI0_MOSI" label="J2[10]/D12" identifier="MOTOR_PWM_D_2"/>
+               <pin_label pin_num="77" pin_signal="PTD4/LLWU_P14/SPI1_PCS0/UART2_RX/TPM0_CH4" label="J1[6]/D2" identifier="SW_8"/>
+               <pin_label pin_num="78" pin_signal="ADC0_SE6b/PTD5/SPI1_SCK/UART2_TX/TPM0_CH5" label="J2[4]/D9" identifier="MOTOR_PWM_G_1"/>
+               <pin_label pin_num="79" pin_signal="ADC0_SE7b/PTD6/LLWU_P15/SPI1_MOSI/UART0_RX/SPI1_MISO" label="J2[17]" identifier="DEBUG_PIN_R"/>
+               <pin_label pin_num="80" pin_signal="PTD7/SPI1_MISO/UART0_TX/SPI1_MOSI" label="J2[19]" identifier="DEBUG_PIN"/>
+            </pin_labels>
+         </pins_profile>
+         <functions_list>
+            <function name="BOARD_InitPins">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>true</callFromInitBoot>
+                  <coreID>core0</coreID>
+                  <enableClock>true</enableClock>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="TPM1" description="Peripheral TPM1 is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="TPM0" description="Peripheral TPM0 is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="TPM2" description="Peripheral TPM2 is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="ADC0" description="Peripheral ADC0 is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="UART1" description="Peripheral UART1 is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="I2C0" description="Peripheral I2C0 is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="Peripheral" resourceId="UART0" description="Peripheral UART0 is not initialized" problem_level="1" source="Pins:BOARD_InitPins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.common" description="Pins initialization requires the COMMON Driver in the project." problem_level="2" source="Pins:BOARD_InitPins">
+                     <feature name="enabled" evaluation="equal" configuration="core0">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.port" description="Pins initialization requires the PORT Driver in the project." problem_level="2" source="Pins:BOARD_InitPins">
+                     <feature name="enabled" evaluation="equal" configuration="core0">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.gpio" description="Pins initialization requires the GPIO Driver in the project." problem_level="2" source="Pins:BOARD_InitPins">
+                     <feature name="enabled" evaluation="equal" configuration="core0">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="TPM1" signal="CH, 0" pin_num="32" pin_signal="PTA12/TPM1_CH0">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="TPM0" signal="CH, 5" pin_num="78" pin_signal="ADC0_SE6b/PTD5/SPI1_SCK/UART2_TX/TPM0_CH5">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="TPM0" signal="CH, 0" pin_num="73" pin_signal="PTD0/SPI0_PCS0/TPM0_CH0">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="TPM0" signal="CH, 2" pin_num="75" pin_signal="PTD2/SPI0_MOSI/UART2_RX/TPM0_CH2/SPI0_MISO">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="TPM0" signal="CH, 3" pin_num="76" pin_signal="PTD3/SPI0_MISO/UART2_TX/TPM0_CH3/SPI0_MOSI">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="TPM2" signal="CH, 0" pin_num="15" pin_signal="ADC0_DP3/ADC0_SE3/PTE22/TPM2_CH0/UART2_TX">
+                     <pin_features>
+                        <pin_feature name="direction" value="INPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOB" signal="GPIO, 18" pin_num="53" pin_signal="TSI0_CH11/PTB18/TPM2_CH0">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOB" signal="GPIO, 19" pin_num="54" pin_signal="TSI0_CH12/PTB19/TPM2_CH1">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOD" signal="GPIO, 1" pin_num="74" pin_signal="ADC0_SE5b/PTD1/SPI0_SCK/TPM0_CH1">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOB" signal="GPIO, 11" pin_num="50" pin_signal="PTB11/SPI1_SCK">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOB" signal="GPIO, 10" pin_num="49" pin_signal="PTB10/SPI1_PCS0">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="ADC0" signal="SE, 11" pin_num="57" pin_signal="ADC0_SE11/TSI0_CH15/PTC2/I2C1_SDA/TPM0_CH1"/>
+                  <pin peripheral="TPM2" signal="CH, 1" pin_num="16" pin_signal="ADC0_DM3/ADC0_SE7a/PTE23/TPM2_CH1/UART2_RX">
+                     <pin_features>
+                        <pin_feature name="direction" value="INPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="UART1" signal="TX" pin_num="1" pin_signal="PTE0/UART1_TX/RTC_CLKOUT/CMP0_OUT/I2C1_SDA">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="UART1" signal="RX" pin_num="2" pin_signal="PTE1/SPI1_MOSI/UART1_RX/SPI1_MISO/I2C1_SCL"/>
+                  <pin peripheral="ADC0" signal="SE, 15" pin_num="56" pin_signal="ADC0_SE15/TSI0_CH14/PTC1/LLWU_P6/RTC_CLKIN/I2C1_SCL/TPM0_CH0"/>
+                  <pin peripheral="GPIOB" signal="GPIO, 9" pin_num="48" pin_signal="PTB9">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOB" signal="GPIO, 8" pin_num="47" pin_signal="PTB8/EXTRG_IN">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="ADC0" signal="SE, 23" pin_num="22" pin_signal="DAC0_OUT/ADC0_SE23/CMP0_IN4/PTE30/TPM0_CH3/TPM_CLKIN1"/>
+                  <pin peripheral="ADC0" signal="SE, 4b" pin_num="21" pin_signal="CMP0_IN5/ADC0_SE4b/PTE29/TPM0_CH2/TPM_CLKIN0"/>
+                  <pin peripheral="ADC0" signal="SE, 0" pin_num="13" pin_signal="ADC0_DP0/ADC0_SE0/PTE20/TPM1_CH0/UART0_TX"/>
+                  <pin peripheral="ADC0" signal="SE, 8" pin_num="43" pin_signal="ADC0_SE8/TSI0_CH0/PTB0/LLWU_P5/I2C0_SCL/TPM1_CH0"/>
+                  <pin peripheral="ADC0" signal="SE, 13" pin_num="46" pin_signal="ADC0_SE13/TSI0_CH8/PTB3/I2C0_SDA/TPM2_CH1"/>
+                  <pin peripheral="ADC0" signal="SE, 12" pin_num="45" pin_signal="ADC0_SE12/TSI0_CH7/PTB2/I2C0_SCL/TPM2_CH0"/>
+                  <pin peripheral="ADC0" signal="SE, 9" pin_num="44" pin_signal="ADC0_SE9/TSI0_CH6/PTB1/I2C0_SDA/TPM1_CH1"/>
+                  <pin peripheral="I2C0" signal="SCL" pin_num="65" pin_signal="CMP0_IN2/PTC8/I2C0_SCL/TPM0_CH4"/>
+                  <pin peripheral="I2C0" signal="SDA" pin_num="66" pin_signal="CMP0_IN3/PTC9/I2C0_SDA/TPM0_CH5"/>
+                  <pin peripheral="GPIOE" signal="GPIO, 3" pin_num="4" pin_signal="PTE3/SPI1_MISO/SPI1_MOSI"/>
+                  <pin peripheral="GPIOE" signal="GPIO, 2" pin_num="3" pin_signal="PTE2/SPI1_SCK"/>
+                  <pin peripheral="GPIOE" signal="GPIO, 5" pin_num="6" pin_signal="PTE5"/>
+                  <pin peripheral="GPIOE" signal="GPIO, 4" pin_num="5" pin_signal="PTE4/SPI1_PCS0"/>
+                  <pin peripheral="GPIOC" signal="GPIO, 17" pin_num="72" pin_signal="PTC17"/>
+                  <pin peripheral="GPIOA" signal="GPIO, 16" pin_num="36" pin_signal="PTA16/SPI0_MOSI/SPI0_MISO"/>
+                  <pin peripheral="GPIOC" signal="GPIO, 7" pin_num="64" pin_signal="CMP0_IN1/PTC7/SPI0_MISO/SPI0_MOSI">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOC" signal="GPIO, 0" pin_num="55" pin_signal="ADC0_SE14/TSI0_CH13/PTC0/EXTRG_IN/CMP0_OUT">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOC" signal="GPIO, 3" pin_num="58" pin_signal="PTC3/LLWU_P7/UART1_RX/TPM0_CH2/CLKOUTa">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOC" signal="GPIO, 4" pin_num="61" pin_signal="PTC4/LLWU_P8/SPI0_PCS0/UART1_TX/TPM0_CH3">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOC" signal="GPIO, 5" pin_num="62" pin_signal="PTC5/LLWU_P9/SPI0_SCK/LPTMR0_ALT2/CMP0_OUT">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOC" signal="GPIO, 6" pin_num="63" pin_signal="CMP0_IN0/PTC6/LLWU_P10/SPI0_MOSI/EXTRG_IN/SPI0_MISO">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOC" signal="GPIO, 12" pin_num="69" pin_signal="PTC12/TPM_CLKIN0">
+                     <pin_features>
+                        <pin_feature name="direction" value="INPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOC" signal="GPIO, 13" pin_num="70" pin_signal="PTC13/TPM_CLKIN1">
+                     <pin_features>
+                        <pin_feature name="direction" value="INPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOC" signal="GPIO, 16" pin_num="71" pin_signal="PTC16">
+                     <pin_features>
+                        <pin_feature name="direction" value="INPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOC" signal="GPIO, 11" pin_num="68" pin_signal="PTC11/I2C1_SDA">
+                     <pin_features>
+                        <pin_feature name="direction" value="INPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOC" signal="GPIO, 10" pin_num="67" pin_signal="PTC10/I2C1_SCL">
+                     <pin_features>
+                        <pin_feature name="direction" value="INPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOA" signal="GPIO, 5" pin_num="31" pin_signal="PTA5/USB_CLKIN/TPM0_CH2">
+                     <pin_features>
+                        <pin_feature name="direction" value="INPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOA" signal="GPIO, 4" pin_num="30" pin_signal="TSI0_CH5/PTA4/I2C1_SDA/TPM0_CH1/NMI_b">
+                     <pin_features>
+                        <pin_feature name="direction" value="INPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIOD" signal="GPIO, 4" pin_num="77" pin_signal="PTD4/LLWU_P14/SPI1_PCS0/UART2_RX/TPM0_CH4">
+                     <pin_features>
+                        <pin_feature name="direction" value="INPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="UART0" signal="TX" pin_num="28" pin_signal="TSI0_CH3/PTA2/UART0_TX/TPM2_CH1">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="UART0" signal="RX" pin_num="27" pin_signal="TSI0_CH2/PTA1/UART0_RX/TPM2_CH0"/>
+               </pins>
+            </function>
+            <function name="BOARD_I2C_ConfigurePins">
+               <description>Configures pin routing and optionally pin electrical features.&amp;lt;br/&amp;gt;</description>
+               <options>
+                  <callFromInitBoot>false</callFromInitBoot>
+                  <coreID>core0</coreID>
+                  <enableClock>true</enableClock>
+               </options>
+               <dependencies>
+                  <dependency resourceType="Peripheral" resourceId="I2C0" description="Peripheral I2C0 is not initialized" problem_level="1" source="Pins:BOARD_I2C_ConfigurePins">
+                     <feature name="initialized" evaluation="equal">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.common" description="Pins initialization requires the COMMON Driver in the project." problem_level="2" source="Pins:BOARD_I2C_ConfigurePins">
+                     <feature name="enabled" evaluation="equal" configuration="core0">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.port" description="Pins initialization requires the PORT Driver in the project." problem_level="2" source="Pins:BOARD_I2C_ConfigurePins">
+                     <feature name="enabled" evaluation="equal" configuration="core0">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <pins>
+                  <pin peripheral="I2C0" signal="SCL" pin_num="65" pin_signal="CMP0_IN2/PTC8/I2C0_SCL/TPM0_CH4">
+                     <pin_features>
+                        <pin_feature name="pull_enable" value="enable"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="I2C0" signal="SDA" pin_num="66" pin_signal="CMP0_IN3/PTC9/I2C0_SDA/TPM0_CH5">
+                     <pin_features>
+                        <pin_feature name="pull_enable" value="enable"/>
+                     </pin_features>
+                  </pin>
+               </pins>
+            </function>
+         </functions_list>
+      </pins>
+      <clocks name="Clocks" version="4.1" enabled="true" update_project_code="true">
+         <clocks_profile>
+            <processor_version>4.0.0</processor_version>
+         </clocks_profile>
+         <clock_configurations>
+            <clock_configuration name="BOARD_BootClockRUN">
+               <description></description>
+               <options/>
+               <dependencies>
+                  <dependency resourceType="PinSignal" resourceId="OSC0.EXTAL0" description="&apos;EXTAL0&apos; (Pins tool id: OSC0.EXTAL0, Clocks tool id: OSC.EXTAL0) needs to be routed" problem_level="1" source="Clocks:BOARD_BootClockRUN">
+                     <feature name="routed" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="PinSignal" resourceId="OSC0.XTAL0" description="&apos;XTAL0&apos; (Pins tool id: OSC0.XTAL0, Clocks tool id: OSC.XTAL0) needs to be routed" problem_level="1" source="Clocks:BOARD_BootClockRUN">
+                     <feature name="routed" evaluation="">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.common" description="Clocks initialization requires the COMMON Driver in the project." problem_level="2" source="Clocks:BOARD_BootClockRUN">
+                     <feature name="enabled" evaluation="equal" configuration="core0">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <clock_sources>
+                  <clock_source id="OSC.OSC.outFreq" value="8 MHz" locked="false" enabled="true"/>
+               </clock_sources>
+               <clock_outputs>
+                  <clock_output id="Bus_clock.outFreq" value="24 MHz" locked="false" accuracy=""/>
+                  <clock_output id="Core_clock.outFreq" value="48 MHz" locked="true" accuracy="0.001"/>
+                  <clock_output id="ERCLK32K.outFreq" value="1 kHz" locked="false" accuracy=""/>
+                  <clock_output id="Flash_clock.outFreq" value="24 MHz" locked="false" accuracy=""/>
+                  <clock_output id="LPO_clock.outFreq" value="1 kHz" locked="false" accuracy=""/>
+                  <clock_output id="MCGIRCLK.outFreq" value="32.768 kHz" locked="false" accuracy=""/>
+                  <clock_output id="OSCERCLK.outFreq" value="8 MHz" locked="false" accuracy=""/>
+                  <clock_output id="PLLFLLCLK.outFreq" value="48 MHz" locked="false" accuracy=""/>
+                  <clock_output id="System_clock.outFreq" value="48 MHz" locked="false" accuracy=""/>
+               </clock_outputs>
+               <clock_settings>
+                  <setting id="MCGMode" value="PEE" locked="false"/>
+                  <setting id="MCG.FCRDIV.scale" value="1" locked="true"/>
+                  <setting id="MCG.FRDIV.scale" value="32" locked="false"/>
+                  <setting id="MCG.IREFS.sel" value="MCG.FRDIV" locked="false"/>
+                  <setting id="MCG.PLLS.sel" value="MCG.PLL" locked="false"/>
+                  <setting id="MCG.PRDIV.scale" value="2" locked="true"/>
+                  <setting id="MCG.VDIV.scale" value="24" locked="true"/>
+                  <setting id="MCG_C1_IRCLKEN_CFG" value="Enabled" locked="false"/>
+                  <setting id="MCG_C2_OSC_MODE_CFG" value="ModeOscLowPower" locked="false"/>
+                  <setting id="MCG_C2_RANGE0_CFG" value="High" locked="false"/>
+                  <setting id="MCG_C2_RANGE0_FRDIV_CFG" value="High" locked="false"/>
+                  <setting id="OSC0_CR_ERCLKEN_CFG" value="Enabled" locked="false"/>
+                  <setting id="OSC_CR_ERCLKEN_CFG" value="Enabled" locked="false"/>
+                  <setting id="SIM.CLKOUTSEL.sel" value="SIM.OUTDIV4" locked="false"/>
+                  <setting id="SIM.OSC32KSEL.sel" value="PMC.LPOCLK" locked="false"/>
+                  <setting id="SIM.OUTDIV1.scale" value="2" locked="false"/>
+                  <setting id="SIM.PLLFLLSEL.sel" value="SIM.MCGPLLCLK_DIV2" locked="false"/>
+                  <setting id="SIM.TPMSRCSEL.sel" value="SIM.PLLFLLSEL" locked="false"/>
+                  <setting id="SIM.UART0SRCSEL.sel" value="SIM.PLLFLLSEL" locked="false"/>
+                  <setting id="SIM.USBSRCSEL.sel" value="SIM.PLLFLLSEL" locked="false"/>
+               </clock_settings>
+               <called_from_default_init>true</called_from_default_init>
+            </clock_configuration>
+            <clock_configuration name="BOARD_BootClockVLPR">
+               <description></description>
+               <options/>
+               <dependencies>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.common" description="Clocks initialization requires the COMMON Driver in the project." problem_level="2" source="Clocks:BOARD_BootClockVLPR">
+                     <feature name="enabled" evaluation="equal" configuration="core0">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.smc" description="Clocks initialization requires the SMC Driver in the project." problem_level="2" source="Clocks:BOARD_BootClockVLPR">
+                     <feature name="enabled" evaluation="equal" configuration="core0">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
+               </dependencies>
+               <clock_sources>
+                  <clock_source id="OSC.OSC.outFreq" value="8 MHz" locked="false" enabled="false"/>
+               </clock_sources>
+               <clock_outputs>
+                  <clock_output id="Bus_clock.outFreq" value="800 kHz" locked="false" accuracy=""/>
+                  <clock_output id="Core_clock.outFreq" value="4 MHz" locked="false" accuracy=""/>
+                  <clock_output id="ERCLK32K.outFreq" value="1 kHz" locked="false" accuracy=""/>
+                  <clock_output id="Flash_clock.outFreq" value="800 kHz" locked="false" accuracy=""/>
+                  <clock_output id="LPO_clock.outFreq" value="1 kHz" locked="false" accuracy=""/>
+                  <clock_output id="MCGIRCLK.outFreq" value="4 MHz" locked="false" accuracy=""/>
+                  <clock_output id="System_clock.outFreq" value="4 MHz" locked="false" accuracy=""/>
+               </clock_outputs>
+               <clock_settings>
+                  <setting id="MCGMode" value="BLPI" locked="false"/>
+                  <setting id="powerMode" value="VLPR" locked="false"/>
+                  <setting id="MCG.CLKS.sel" value="MCG.IRCS" locked="false"/>
+                  <setting id="MCG.FCRDIV.scale" value="1" locked="true"/>
+                  <setting id="MCG.FRDIV.scale" value="32" locked="false"/>
+                  <setting id="MCG.IRCS.sel" value="MCG.FCRDIV" locked="false"/>
+                  <setting id="MCG_C1_IRCLKEN_CFG" value="Enabled" locked="false"/>
+                  <setting id="MCG_C2_OSC_MODE_CFG" value="ModeOscLowPower" locked="false"/>
+                  <setting id="MCG_C2_RANGE0_CFG" value="High" locked="false"/>
+                  <setting id="MCG_C2_RANGE0_FRDIV_CFG" value="High" locked="false"/>
+                  <setting id="SIM.OSC32KSEL.sel" value="PMC.LPOCLK" locked="false"/>
+                  <setting id="SIM.OUTDIV4.scale" value="5" locked="false"/>
+               </clock_settings>
+               <called_from_default_init>false</called_from_default_init>
+            </clock_configuration>
+         </clock_configurations>
+      </clocks>
+      <periphs name="Peripherals" version="4.1" enabled="true" update_project_code="true">
+         <peripherals_profile>
+            <processor_version>N/A</processor_version>
+         </peripherals_profile>
+         <functional_groups>
+            <functional_group name="BOARD_InitPeripherals" uuid="578e9758-ca18-4cc9-b70b-81ecf637a031" called_from_default_init="true" id_prefix="" core="">
+               <description></description>
+               <options/>
+               <dependencies/>
+               <instances/>
+            </functional_group>
+         </functional_groups>
+         <components/>
+      </periphs>
+   </tools>
+</configuration>
