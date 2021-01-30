@@ -71,7 +71,7 @@ int algo(int frame[128]) {
 	/* On commence par vérifier la partie droite du pic droit */
 	pos = pic_d + 3;
 	pixel_ok = 0;
-	if (pos < 124) {
+	if (pos < 123) {
 		for (int k = 0; k < 3; k++) {
 			if (frame[pos+k] > outside_light - seuil && frame[pos+k] < outside_light + seuil) { //out of bound si pos = 123
 				pixel_ok++;
