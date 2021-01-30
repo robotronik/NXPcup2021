@@ -37,31 +37,32 @@ int algo(int frame[128]) {
 
 	/* Validation des pics */
 	int pixel_ok, pos, pic_g_ok = 1, pic_d_ok = 1;
-	int seuil = (int)((track_light - outside_light)/4);
+	int seuil = (int)((track_light - outside_light)/4); 
 
 	/* Pic gauche */
 	pos = pic_g - 3;
 	pixel_ok = 0;
-	if (pos > 5) {
+	if (pos > 5) {  //pourquoi 5 et pas 2 ? 
 		for (int k = 0; k < 3; k++) {
 			if (frame[pos-k] > outside_light - seuil && frame[pos-k] < outside_light + seuil) {
 				pixel_ok++;
 			}
 		}
 	}
-	/* On rentre dans le if si on a validé la partie gauche du pic et on teste la partie droite */
-	if (pixel_ok > 1) {
+	/* On rentre dans le if si on a validé la partie gauche du pic et on teste la partie droite du pic gauche */
+	if (pixel_ok > 0) {
 		pos = pic_g + 3;
-		pixel_ok = 0;
 		for (int k = 0; k < 3; k++) {
 			if (frame[pos+k] > track_light - seuil && frame[pos+k] < track_light + seuil) {
 				pixel_ok++;
 			}
 		}
 	}
+	/* inutile
 	else {
 		pic_g_ok = 0;
 	}
+	*/
 	if (pixel_ok < 2) {
 		pic_g_ok = 0;
 	}
@@ -72,31 +73,31 @@ int algo(int frame[128]) {
 	pixel_ok = 0;
 	if (pos < 124) {
 		for (int k = 0; k < 3; k++) {
-			if (frame[pos+k] > outside_light - seuil && frame[pos+k] < outside_light + seuil) {
+			if (frame[pos+k] > outside_light - seuil && frame[pos+k] < outside_light + seuil) { //out of bound si pos = 123
 				pixel_ok++;
 			}
 		}
 	}
 
-	/* On rentre dans le if si on a validé la partie droite du pic droite et on teste la partie gauche */
-	if (pixel_ok > 1) {
+	/* On rentre dans le if si on a validé la partie droite du pic droite et on teste la partie gauche du pic droit */
+	if (pixel_ok > 0) {
 		pos = pic_d - 3;
-		pixel_ok = 0;
 		for (int k = 0; k < 3; k++) {
 			if (frame[pos-k] > track_light - seuil && frame[pos-k] < track_light + seuil) {
 				pixel_ok++;
 			}
 		}
 	}
+	/* inutile
 	else {
 		pic_d_ok = 0;
-	}
+	}*/
 	if (pixel_ok < 2) {
 		pic_d_ok = 0;
 	}
 
 	if (pic_d_ok && pic_g_ok) {
-		track_middle = (pic_g + pic_d)>>1;
+		track_middle = (pic_g + pic_d)>>1; //pas compris
 		led_sel = 1;
 	}
 
